@@ -27,4 +27,12 @@ let division = (a, b)=> a/b
     console.log(division(15, 3));
     
 
+    let i = 0;
+    while (i < 3) { // shows 0, then 1, then 2
+      console.log( i );
+      i++;
+    }
 
+    for (let j= 0; j < 3; j++) { // shows 0, then 1, then 2
+        console.log(j);
+      }
