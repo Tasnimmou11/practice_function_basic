@@ -36,3 +36,37 @@ let division = (a, b)=> a/b
     for (let j= 0; j < 3; j++) { // shows 0, then 1, then 2
         console.log(j);
       }
+
+
+
+      let userName = 'John';
+
+      function showMessage() {
+        userName = "Bob"; // (1) changed the outer variable
+      
+        let message = 'Hello, ' + userName;
+        console.log(message);
+      }
+      
+      console.log( userName ); // John before the function call
+      
+      showMessage();
+      
+      console.log( userName ); // Bob, the value was modified by the function
+
+
+    
+
+      let userName1 = 'John';
+
+      function showMessage1() {
+        let userName1 = "Bob"; // declare a local variable
+      
+        let message1 = 'Hello, ' + userName1; // Bob
+        console.log(message1);
+      }
+      
+      // the function will create and use its own userName
+      showMessage1();
+      
+      console.log( userName1 ); // John, unchanged, the function did not access the outer variable
