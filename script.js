@@ -70,3 +70,16 @@ let division = (a, b)=> a/b
       showMessage1();
       
       console.log( userName1 ); // John, unchanged, the function did not access the outer variable
+
+      function showMessage(from, text="no text given" ) {
+        console.log( from + ": " + text );
+      }
+      
+      showMessage("Ann"); // Ann: no text given
+
+
+      function sum(a, b) {
+        return a + b;
+      }
+      let result = sum(1, 2);
+      console.log( result ); // 3
