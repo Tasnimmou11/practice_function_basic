@@ -83,3 +83,40 @@ let division = (a, b)=> a/b
       }
       let result = sum(1, 2);
       console.log( result ); // 3
+
+
+      //object
+      let user = {};
+
+// set
+user["likes birds"] = true;
+
+// get
+console.log(user["likes birds"]); // true
+
+// delete
+delete user["likes birds"];
+
+//new
+
+let user1 = {
+  name: "John",
+  age: 30
+};
+
+let key = prompt("What do you want to know about the user?", "name");
+
+// access by variable
+console.log( user1[key] ); // John (if enter "name")
+
+///for in loop
+let user2 = {
+  name: "John",
+  surname: "Smith"
+};
+user2.age = 25; // add one more
+
+// non-integer properties are listed in the creation order
+for (let prop in user2) {
+  console.log( prop ); // name, surname, age
+}
