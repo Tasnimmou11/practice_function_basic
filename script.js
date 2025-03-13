@@ -120,3 +120,23 @@ user2.age = 25; // add one more
 for (let prop in user2) {
   console.log( prop ); // name, surname, age
 }
+
+//method of premitive
+let john = {
+  name: "John",
+  sayHi: function() {
+    console.log("Hi buddy!");
+  }
+};
+
+john.sayHi(); // Hi buddy!
+
+let str = "Hello";
+
+console.log( str.toUpperCase() ); // HELLO
+
+function sum1(a, b) {
+  return a + b;
+}
+
+console.log(`1 + 2 = ${sum(1, 2)}.`); // 1 + 2 = 3.
